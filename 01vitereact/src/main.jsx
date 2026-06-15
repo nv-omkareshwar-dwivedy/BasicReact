@@ -12,11 +12,12 @@ const aEle = React.createElement(
   'Click to visit google'
 )
 
+const username = "OD"
 const ele = (
-  <a href="https://google.com">visit to google</a>
+  <a href="https://google.com">visit to google {username}</a>
 )
 
 createRoot(document.getElementById('root')).render(
-  //ele
-  aEle
+  ele
+  // aEle
 )
