@@ -1,6 +1,6 @@
-function Card(detail) {
+function Card(props) {
     
-    const {imgSrc, imgAlt, name, color, price} = detail.detail;
+    const {imgSrc, imgAlt, name, color, price} = props.detail;
     return (
         <div className="group relative">
             <img src={imgSrc} alt={imgAlt} className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
